@@ -35,7 +35,7 @@ D1 - LED anode
 
 2. Update the Wifi SSID and Password
 
-3. Extract certificate thumbprints for Login HTTPS endpoint and your instance's HTTPS endpoint and update the sketch files.
+3. Extract certificate thumbprints for Salesforce Login endpoint and your instance's HTTPS endpoint and update the sketch files.
 
 4. Update Salesforce username, password and security token.
 
