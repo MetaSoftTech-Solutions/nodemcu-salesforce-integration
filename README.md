@@ -1,7 +1,7 @@
 # ESP8266 NodeMCU integration with Salesforce IoT (Platform Events) #
 Arduino IDE sketches for integrating ESP8266 NodeMCU with Salesforce through publishing and susbcribing to Salesforce Platform Events. 
 
-## Sketch: Platform-event-publisher.ino ##
+## Sketch: platform-event-publisher.ino ##
 Reads sensor data from HC-SR04 ultrasonic sensor and publishes an event to Salesforce Platform Events
 
 Pin connections between ESP8266 NodeMCU and HC-SR04
@@ -29,6 +29,7 @@ Gnd - LED Cathode (-ve)
 D2 - Buzzer anode
 
 D1 - LED anode
+
 
 ## Sketch Instructions ##
 1. Create a connected App in Salesforce and update the consumer key and consumer secret in sketch files.
