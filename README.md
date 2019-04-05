@@ -13,7 +13,7 @@ If you are new to programming NodeMCU on Arduino IDE, follow these steps.
 ## Platform event publisher ##
 Sketch: [platform-event-publisher.ino](/platform-event-publisher/platform-event-publisher.ino)
 
-Reads sensor data from HC-SR04 ultrasonic sensor and publishes an event to Salesforce Platform Events. This diagram shows the pin connections that was used.
+Reads sensor data from HC-SR04 ultrasonic sensor and publishes an event to Salesforce Platform Events. The following diagram shows the pin connections that was used.
 
 ![alt text](/platform-event-publisher/esp8266-hcsr04-diagram.png?raw=true)
 
@@ -31,6 +31,8 @@ The board is powered through micro USB cable.
 Sketch: [platform-event-subscriber.ino](/platform-event-subscriber/platform-event-subscriber.ino)
 
 NodeMCU subscribes to Salesforce platform events via CometD connection (Bayeux protocol). When it receives an event, it turns ON or OFF an LED and an active Buzzer based on the event data.
+
+Pin connections that was used for the receiver
 
 ![alt text](/platform-event-subscriber/esp8266-LED-buzzer-diagram.png?raw=true)
 
