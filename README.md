@@ -47,10 +47,12 @@ NodeMCU subscribes to Salesforce platform events via CometD connection (Bayeux p
 
 * Update the Wifi SSID and Password
 
-* Extract certificate thumbprints for Salesforce Login endpoint and your instance's HTTPS endpoint and update the sketch files.
+* Extract certificate thumbprints for Salesforce login endpoint (login.salesforce.com or test.salesforce.com) and your instance's  endpoint and update the sketch files. You can use OpenSSL as described [here](https://knowledge.digicert.com/solution/SO28771.html) or if you are a GUI person, use [Portecle](http://portecle.sourceforge.net/) 
 
 * Update Salesforce username, password and security token.
 
 * Create Platform Event objects and setup Orchestration in Salesforce IoT. Update the platform event names in sketches. If you are publishing and subscribing to different events then update the same in right sketch files. 
 
-* Compile and upload the sketches to NodeMCU boards using Arduino IDE.
+* Compile and upload sketches to the boards.
+
+You can use this code to publish any event and subscribe to any event with Salesforce!
