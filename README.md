@@ -10,12 +10,14 @@ If you are new to programming NodeMCU on Arduino IDE, follow these steps.
   * Go to Arduino IDE preferences and add the following URL in "Additional Boards Manager URLs" field and save it - http://arduino.esp8266.com/stable/package_esp8266com_index.json
   * Go to Boards Manager and install the package. You should see a package named "esp8266 by ESP8266 Community". You are all set to program NodeMCU v1.0 in Arduino IDE!
 
-## Platform event publisher sketch ## 
+## Platform event publisher ##
+Sketch: [platform-event-publisher.ino](/platform-event-publisher/platform-event-publisher.ino)
+
 Reads sensor data from HC-SR04 ultrasonic sensor and publishes an event to Salesforce Platform Events. This diagram shows the pin connections that was used.
 
-![alt text](../master/platform-event-publisher/esp8266-hcsr04-diagram.png?raw=true)
+![alt text](/platform-event-publisher/esp8266-hcsr04-diagram.png?raw=true)
 
-* Connect NodeMCU Vin pin to Vcc of HC-SR04
+* NodeMCU Vin pin to Vcc of HC-SR04
 
 * Gnd to Gnd
 
@@ -25,10 +27,12 @@ Reads sensor data from HC-SR04 ultrasonic sensor and publishes an event to Sales
 
 The board is powered through micro USB cable.
 
-## Platform event subscriber sketch ##
+## Platform event subscriber ##
+Sketch: [platform-event-subscriber.ino](/platform-event-subscriber/platform-event-subscriber.ino)
+
 NodeMCU subscribes to Salesforce platform events via CometD connection (Bayeux protocol). When it receives an event, it turns ON or OFF an LED and an active Buzzer based on the event data.
 
-![alt text](../master/platform-event-subscriber/esp8266-LED-buzzer-diagram.png?raw=true)
+![alt text](/platform-event-subscriber/esp8266-LED-buzzer-diagram.png?raw=true)
 
 * Gnd - Buzzer Gnd
 
