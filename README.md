@@ -8,7 +8,8 @@ If you are new to programming NodeMCU on Arduino IDE, follow these steps.
 * Install the CP2102 drivers for NodeMCU v1.0 from https://www.silabs.com/products/development-tools/software/usb-to-uart-bridge-vcp-drivers
 * Install ESP8266 package for Arduino by following these steps
   * Go to Arduino IDE preferences and add the following URL in "Additional Boards Manager URLs" field and save it - http://arduino.esp8266.com/stable/package_esp8266com_index.json
-  * Go to Boards Manager and install the package. You should see a package named "esp8266 by ESP8266 Community". You are all set to program NodeMCU v1.0 in Arduino IDE!
+  * Go to Boards Manager and install the package. You should see a package named "esp8266 by ESP8266 Community". 
+  * Install ArduinoJson library, follow the steps described here - https://arduinojson.org/v5/doc/installation
 
 ## Platform event publisher ##
 Sketch: [platform-event-publisher.ino](/platform-event-publisher/platform-event-publisher.ino)
